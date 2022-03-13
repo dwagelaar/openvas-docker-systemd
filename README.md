@@ -1,5 +1,5 @@
 # openvas-docker-systemd
-Systemd service for OpenVAS docker container on Fedora
+Systemd service for OpenVAS docker container on Fedora. Based on https://github.com/mikesplain/openvas-docker.
 
 ## Installing
 ```
