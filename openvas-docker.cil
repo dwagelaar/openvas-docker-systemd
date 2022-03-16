@@ -70,6 +70,7 @@
     (allow process gopher_port_t ( tcp_socket ( name_bind name_connect )))
     (allow process gpsd_port_t ( tcp_socket ( name_bind name_connect )))
     (allow process hadoop_namenode_port_t ( tcp_socket ( name_bind name_connect )))
+    (allow process hddtemp_port_t ( tcp_socket (  name_bind name_connect )));
     (allow process hi_reserved_port_t ( tcp_socket ( name_bind name_connect )))
     (allow process hplip_port_t ( tcp_socket ( name_bind name_connect )))
     (allow process http_cache_port_t ( tcp_socket ( name_bind name_connect )))
@@ -124,6 +125,7 @@
     (allow process netsupport_port_t ( tcp_socket ( name_bind name_connect )))
     (allow process nfs_port_t ( tcp_socket ( name_bind name_connect )))
     (allow process nmea_port_t ( tcp_socket ( name_bind name_connect )))
+    (allow process nodejs_debug_port_t ( tcp_socket (  name_bind name_connect )));
     (allow process ntop_port_t ( tcp_socket ( name_bind name_connect )))
     (allow process oa_system_port_t ( tcp_socket ( name_bind name_connect )))
     (allow process ocsp_port_t ( tcp_socket ( name_bind name_connect )))
@@ -135,6 +137,7 @@
     (allow process pegasus_https_port_t ( tcp_socket ( name_bind name_connect )))
     (allow process pgpkeyserver_port_t ( tcp_socket ( name_bind name_connect )))
     (allow process pki_ca_port_t ( tcp_socket ( name_bind name_connect )))
+    (allow process pki_tks_port_t ( tcp_socket (  name_bind name_connect )));
     (allow process pktcable_cops_port_t ( tcp_socket ( name_bind name_connect )))
     (allow process pop_port_t ( tcp_socket ( name_bind name_connect )))
     (allow process portmap_port_t ( tcp_socket ( name_bind name_connect )))
@@ -166,6 +169,7 @@
     (allow process saphostctrl_port_t ( tcp_socket ( name_bind name_connect )))
     (allow process servistaitsm_port_t ( tcp_socket ( name_bind name_connect )))
     (allow process sge_port_t ( tcp_socket ( name_bind name_connect )))
+    (allow process shellinaboxd_port_t ( tcp_socket (  name_bind name_connect )));
     (allow process sieve_port_t ( tcp_socket ( name_bind name_connect )))
     (allow process sip_port_t ( tcp_socket ( name_bind name_connect )))
     (allow process sixxsconfig_port_t ( tcp_socket ( name_bind name_connect )))
@@ -174,6 +178,7 @@
     (allow process smtp_port_t ( tcp_socket ( name_bind name_connect )))
     (allow process snmp_port_t ( tcp_socket ( name_bind name_connect )))
     (allow process soundd_port_t ( tcp_socket ( name_bind name_connect )))
+    (allow process spamd_port_t ( tcp_socket (  name_bind name_connect )));
     (allow process squid_port_t ( tcp_socket ( name_bind name_connect )))
     (allow process ssdp_port_t ( tcp_socket ( name_bind name_connect )))
     (allow process ssh_port_t ( tcp_socket ( name_bind name_connect )))
@@ -220,6 +225,7 @@
     (allow process zookeeper_election_port_t ( tcp_socket ( name_bind name_connect )))
     (allow process zookeeper_leader_port_t ( tcp_socket ( name_bind name_connect )))
     (allow process zope_port_t ( tcp_socket ( name_bind name_connect )))
+    (allow process proc_t ( file ( ioctl )))
     (allow process var_lib_t ( dir ( add_name create getattr ioctl lock open read remove_name rmdir search setattr write ))) 
     (allow process var_lib_t ( file ( append create getattr ioctl lock map open read rename setattr unlink write ))) 
     (allow process var_lib_t ( fifo_file ( getattr read write append ioctl lock open ))) 

@@ -5,5 +5,5 @@ Requires=NetworkManager-wait-online.service
 [Service]
 ExecStartPre=-/usr/bin/docker stop openvas
 ExecStartPre=-/usr/bin/docker rm openvas
-ExecStart=/usr/bin/docker run -p 127.0.0.1:443:443 --env-file /etc/sysconfig/openvas-docker --name openvas --security-opt label=type:openvas-docker.process -e PUBLIC_HOSTNAME=localhost -v /var/lib/openvas/mgr/:/var/lib/openvas/mgr/ mikesplain/openvas
+ExecStart=/usr/bin/docker run -p 127.0.0.1:443:443 --env-file /etc/sysconfig/openvas-docker --name openvas --security-opt label=type:openvas-docker.process -e PUBLIC_HOSTNAME=localhost -v /var/lib/openvas/mgr/:/var/lib/openvas/mgr/ dwagelaar/openvas:latest
 ExecStop=/usr/bin/docker stop openvas

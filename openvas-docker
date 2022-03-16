@@ -1,1 +1,5 @@
 OPENVAS_PASSWORD=admin
+FEED=feed.community.greenbone.net
+COMMUNITY_NVT_RSYNC_FEED=rsync://$FEED:/nvt-feed
+COMMUNITY_CERT_RSYNC_FEED=rsync://$FEED:/cert-data
+COMMUNITY_SCAP_RSYNC_FEED=rsync://$FEED:/scap-data
